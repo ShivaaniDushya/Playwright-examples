@@ -9,5 +9,7 @@ import {chromium} from "playwright";
     const text = await page.$("#search2");
     await text.type("Javascript", {delay: 10});
 
+    await page.click("#learntocode_searchbtn", {delay: 10});
+
     await browser.close();
 })();
