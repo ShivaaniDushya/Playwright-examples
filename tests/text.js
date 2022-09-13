@@ -7,7 +7,7 @@ import {chromium} from "playwright";
     await page.goto("https://www.w3schools.com/");
 
     const text = await page.$("#search2");
-    await text.type("Javascript");
+    await text.type("Javascript", {delay: 10});
 
     await browser.close();
 })();
